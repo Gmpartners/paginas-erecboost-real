@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalized Performance Assessment</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gradient-to-b from-gray-50 to-gray-100">
+    <main class="container mx-auto px-4 py-8 max-w-2xl">
+        <div class="bg-white rounded-xl shadow-2xl p-8">
+            <div class="text-center mb-8">
+                <h1 class="text-3xl font-bold text-blue-900">Your Path to Enhanced Performance</h1>
+                <p class="text-gray-600 mt-2">Answer a few questions to receive your personalized solution</p>
+            </div>
+
+            <div id="progress-container" class="mb-8">
+                <div class="flex justify-between text-sm text-gray-600 mb-2">
+                    <span>Getting Started</span>
+                    <span id="progress-text">Step 1 of 4</span>
+                </div>
+                <div class="w-full bg-gray-200 rounded-full h-3">
+                    <div id="progress-bar" class="bg-gradient-to-r from-blue-600 to-green-500 h-3 rounded-full transition-all duration-500" style="width: 0%"></div>
+                </div>
+            </div>
+
+            <div id="quiz-container">
+                <div class="question-slide" id="slide-1">
+                    <h2 class="text-2xl font-bold text-center mb-6">What's Your Age Range?</h2>
+                    <div class="space-y-4">
+                        <div class="p-6 border-2 border-gray-200 rounded-xl hover:border-blue-500 hover:bg-blue-50 cursor-pointer transition-all transform hover:scale-105" onclick="selectAge('30-45')">
+                            <h3 class="font-bold text-lg">30-45 years</h3>
+                            <p class="text-gray-600">Perfect age to maximize your potential</p>
+                            <div class="text-blue-600 mt-2">98% success rate for this age group →</div>
+                        </div>
+                        <div class="p-6 border-2 border-gray-200 rounded-xl hover:border-blue-500 hover:bg-blue-50 cursor-pointer transition-all transform hover:scale-105" onclick="selectAge('46-60')">
+                            <h3 class="font-bold text-lg">46-60 years</h3>
+                            <p class="text-gray-600">Ideal for performance enhancement</p>
+                            <div class="text-blue-600 mt-2">95% satisfaction in this category →</div>
+                        </div>
+                        <div class="p-6 border-2 border-gray-200 rounded-xl hover:border-blue-500 hover:bg-blue-50 cursor-pointer transition-all transform hover:scale-105" onclick="selectAge('60+')">
+                            <h3 class="font-bold text-lg">60+ years</h3>
+                            <p class="text-gray-600">Natural support for active lifestyle</p>
+                            <div class="text-blue-600 mt-2">92% reported improvement →</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="question-slide hidden" id="slide-2">
+                    <h3 class="text-2xl font-bold text-center mb-6">How Would You Rate Your Current Satisfaction?</h3>
+                    <div class="bg-blue-50 p-4 rounded-lg mb-6">
+                        <p class="text-blue-800">87% of men with your profile reported significant improvement within weeks!</p>
+                    </div>
+                    <div class="space-y-6 p-4">
+                        <div class="flex items-center justify-between text-sm font-medium">
+                            <span>Needs Improvement</span>
+                            <span>Highly Satisfied</span>
+                        </div>
+                        <input type="range" class="w-full h-3 accent-blue-600" min="1" max="10" value="5" oninput="updateRating(this.value)">
+                        <p class="text-center text-xl font-bold" id="rating-value">5/10</p>
+                        <p class="text-gray-600 text-center">Your rating helps us customize the perfect solution</p>
+                    </div>
+                    <button onclick="nextSlide()" class="mt-8 w-full bg-gradient-to-r from-blue-600 to-blue-700 text-white py-4 rounded-xl hover:from-blue-700 hover:to-blue-800 transition-all transform hover:scale-105 font-bold text-lg">
+                        Continue to See Your Potential
+                    </button>
+                </div>
+
+                <div class="question-slide hidden" id="slide-3">
+                    <h3 class="text-2xl font-bold text-center mb-6">Select Your Desired Outcomes</h3>
+                    <div class="bg-green-50 p-4 rounded-lg mb-6">
+                        <p class="text-green-800">You're moments away from discovering your personalized solution!</p>
+                    </div>
+                    <div class="space-y-4">
+                        <label class="flex items-center p-4 border-2 border-gray-200 rounded-xl hover:border-green-500 cursor-pointer transition-all">
+                            <input type="checkbox" class="form-checkbox h-5 w-5 text-green-600">
+                            <span class="ml-3">
+                                <span class="font-bold block">Enhanced Performance</span>
+                                <span class="text-sm text-gray-600">92% success rate</span>
+                            </span>
+                        </label>
+                        <label class="flex items-center p-4 border-2 border-gray-200 rounded-xl hover:border-green-500 cursor-pointer transition-all">
+                            <input type="checkbox" class="form-checkbox h-5 w-5 text-green-600">
+                            <span class="ml-3">
+                                <span class="font-bold block">Improved Confidence</span>
+                                <span class="text-sm text-gray-600">88% reported boost</span>
+                            </span>
+                        </label>
+                        <label class="flex items-center p-4 border-2 border-gray-200 rounded-xl hover:border-green-500 cursor-pointer transition-all">
+                            <input type="checkbox" class="form-checkbox h-5 w-5 text-green-600">
+                            <span class="ml-3">
+                                <span class="font-bold block">Natural Solution</span>
+                                <span class="text-sm text-gray-600">100% natural ingredients</span>
+                            </span>
+                        </label>
+                    </div>
+                    <button onclick="nextSlide()" class="mt-8 w-full bg-gradient-to-r from-green-500 to-green-600 text-white py-4 rounded-xl hover:from-green-600 hover:to-green-700 transition-all transform hover:scale-105 font-bold text-lg">
+                        Continue
+                    </button>
+                </div>
+
+                <div class="question-slide hidden" id="slide-4">
+                    <h3 class="text-2xl font-bold text-center mb-6">Personal Questions</h3>
+                    <div class="space-y-6">
+                        <div class="mb-4">
+                            <h4 class="text-lg font-medium text-gray-700">Is your partner satisfied with your relationship?</h4>
+                            <div class="flex space-x-4 mt-2">
+                                <button onclick="selectOption(this)" class="answer-btn bg-gray-100 hover:bg-blue-50 text-gray-800 font-medium py-2 px-4 rounded-lg border border-gray-300 transition-all">Yes</button>
+                                <button onclick="selectOption(this)" class="answer-btn bg-gray-100 hover:bg-blue-50 text-gray-800 font-medium py-2 px-4 rounded-lg border border-gray-300 transition-all">No</button>
+                                <button onclick="selectOption(this)" class="answer-btn bg-gray-100 hover:bg-blue-50 text-gray-800 font-medium py-2 px-4 rounded-lg border border-gray-300 transition-all">Not sure</button>
+                            </div>
+                        </div>
+                
+                        <div class="mb-4">
+                            <h4 class="text-lg font-medium text-gray-700">Do you have difficulty maintaining erections during intimacy?</h4>
+                            <div class="flex space-x-4 mt-2">
+                                <button onclick="selectOption(this)" class="answer-btn bg-gray-100 hover:bg-blue-50 text-gray-800 font-medium py-2 px-4 rounded-lg border border-gray-300 transition-all">Yes</button>
+                                <button onclick="selectOption(this)" class="answer-btn bg-gray-100 hover:bg-blue-50 text-gray-800 font-medium py-2 px-4 rounded-lg border border-gray-300 transition-all">No</button>
+                                <button onclick="selectOption(this)" class="answer-btn bg-gray-100 hover:bg-blue-50 text-gray-800 font-medium py-2 px-4 rounded-lg border border-gray-300 transition-all">Sometimes</button>
+                            </div>
+                        </div>
+                
+                        <div class="mb-4">
+                            <h4 class="text-lg font-medium text-gray-700">Do you suspect your partner has cheated on you due to dissatisfaction?</h4>
+                            <div class="flex space-x-4 mt-2">
+                                <button onclick="selectOption(this)" class="answer-btn bg-gray-100 hover:bg-blue-50 text-gray-800 font-medium py-2 px-4 rounded-lg border border-gray-300 transition-all">Yes</button>
+                                <button onclick="selectOption(this)" class="answer-btn bg-gray-100 hover:bg-blue-50 text-gray-800 font-medium py-2 px-4 rounded-lg border border-gray-300 transition-all">No</button>
+                                <button onclick="selectOption(this)" class="answer-btn bg-gray-100 hover:bg-blue-50 text-gray-800 font-medium py-2 px-4 rounded-lg border border-gray-300 transition-all">I don’t know</button>
+                            </div>
+                        </div>
+                    </div>
+                    <button onclick="window.location.href='sales.html'" class="mt-8 w-full bg-gradient-to-r from-blue-600 to-blue-700 text-white py-4 rounded-xl hover:from-blue-700 hover:to-blue-800 transition-all transform hover:scale-105 font-bold text-lg">
+                        Finish
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        let currentSlide = 1;
+        const totalSlides = 4;
+
+        function updateProgressBar() {
+            const progress = ((currentSlide - 1) / totalSlides) * 100;
+            document.querySelector('#progress-bar').style.width = `${progress}%`;
+            document.querySelector('#progress-text').textContent = `Step ${currentSlide} of ${totalSlides}`;
+        }
+
+        function selectAge(age) {
+            currentSlide++;
+            showSlide(currentSlide);
+        }
+
+        function updateRating(value) {
+            document.getElementById('rating-value').textContent = `${value}/10`;
+        }
+
+        function nextSlide() {
+            currentSlide++;
+            showSlide(currentSlide);
+        }
+
+        function showSlide(slideNumber) {
+            document.querySelectorAll('.question-slide').forEach(slide => slide.classList.add('hidden'));
+            document.getElementById('slide-' + slideNumber).classList.remove('hidden');
+            updateProgressBar();
+        }
+        function selectOption(button) {
+        // Remove 'selected' class from other buttons in the same group
+        const parent = button.parentElement;
+        parent.querySelectorAll('.answer-btn').forEach(btn => {
+            btn.classList.remove('bg-blue-100', 'border-blue-400', 'text-blue-800');
+        });
+
+        // Highlight the selected button
+        button.classList.add('bg-blue-100', 'border-blue-400', 'text-blue-800');
+    }
+    </script>
+</body>
+</html>
