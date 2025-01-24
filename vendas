@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revolutionary Men's Health Solution</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gradient-to-b from-gray-50 to-gray-100">
+    <div class="bg-red-600 text-white py-2 text-center">
+        <p class="text-sm animate-pulse">🔥 Special Offer: Save 30% + Free Shipping Today Only!</p>
+    </div>
+
+    <header class="bg-gradient-to-r from-blue-900 to-blue-800 text-white py-12">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl font-bold mb-4">Breakthrough Natural Solution for Men's Health</h1>
+            <p class="text-xl">Clinically Proven | Doctor Recommended | 100% Natural</p>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-12 max-w-5xl">
+        <!-- Hero Section -->
+        <section class="bg-white rounded-xl shadow-2xl overflow-hidden mb-12">
+            <div class="grid md:grid-cols-2 gap-8 p-8">
+                <div>
+                    <img src="https://erec-boost.com/BKR-ES-DESC/assets/6.png" alt="Product Image" class="rounded-lg shadow-lg">
+                </div>
+                <div class="space-y-6">
+                    <div class="bg-green-50 p-6 rounded-xl">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-4">Clinically Proven Benefits</h3>
+                        <ul class="space-y-3">
+                            <li class="flex items-center text-green-800">
+                                <svg class="w-6 h-6 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                                </svg>
+                                Enhanced Performance (92% Success Rate)
+                            </li>
+                            <li class="flex items-center text-green-800">
+                                <svg class="w-6 h-6 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                                </svg>
+                                Improved Confidence (88% Reported)
+                            </li>
+                            <li class="flex items-center text-green-800">
+                                <svg class="w-6 h-6 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                                </svg>
+                                100% Natural Formula
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-blue-50 p-6 rounded-xl">
+                        <div class="text-center">
+                            <p class="text-3xl font-bold text-blue-900 mb-2">Special Offer</p>
+                            <p class="text-xl text-gray-600 mb-4">Save 30% + Free Shipping</p>
+                            <a href="#pricing-packages" class="inline-block bg-gradient-to-r from-green-600 to-green-700 text-white font-bold py-4 px-8 rounded-full hover:from-green-700 hover:to-green-800 transition transform hover:scale-105">
+                                Claim Your Discount Now
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Clinical Results -->
+        <section class="mb-12">
+            <h2 class="text-3xl font-bold mb-8 text-center">Clinical Trial Results</h2>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="bg-white p-6 rounded-xl shadow-lg">
+                    <div class="text-4xl mb-4 text-center">💪</div>
+                    <h3 class="text-xl font-bold mb-2 text-center">92%</h3>
+                    <p class="text-gray-600 text-center">Enhanced Performance</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-lg">
+                    <div class="text-4xl mb-4 text-center">🎯</div>
+                    <h3 class="text-xl font-bold mb-2 text-center">88%</h3>
+                    <p class="text-gray-600 text-center">Improved Confidence</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-lg">
+                    <div class="text-4xl mb-4 text-center">⭐</div>
+                    <h3 class="text-xl font-bold mb-2 text-center">100%</h3>
+                    <p class="text-gray-600 text-center">Natural Ingredients</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Doctor's Section -->
+        <section class="bg-white rounded-xl shadow-lg p-8 mb-12">
+            <div class="flex items-center mb-6">
+                <img src="https://st3.depositphotos.com/29384342/33509/i/450/depositphotos_335092898-stock-photo-portrait-smiling-self-confident-medical.jpg" alt="Doctor" class=" h-20 rounded-full mr-6">
+                <div>
+                    <h3 class="text-2xl font-bold">Dr. Robert Anderson</h3>
+                    <p class="text-gray-600">Leading Medical Researcher</p>
+                </div>
+            </div>
+            <p class="text-gray-700 text-lg mb-6">
+                "After 8 years of research and clinical trials, we've developed a breakthrough natural formula that has helped thousands of men regain their confidence and vitality."
+            </p>
+        </section>
+
+        <!-- Pricing Section -->
+        <section class="mb-12">
+            <h2 id="pricing-packages" class="text-3xl font-bold mb-8 text-center">Choose Your Package</h2>
+            <div class="grid md:grid-cols-3 gap-6">
+                <!-- Basic Package -->
+                <div class="bg-white rounded-xl shadow-lg p-6 border-2 border-gray-200 relative">
+                    <div class="absolute top-4 right-4 bg-red-500 text-white px-3 py-1 rounded-full text-sm">
+                        20% OFF
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">1 Month Supply</h3>
+                    <img src="https://erec-boost.com/BKR-ES-DESC/assets/1.png" alt="Basic Package" class="w-full rounded-lg mb-4">
+                    <div class="mb-4">
+                        <span class="text-3xl font-bold">$84</span>
+                        <span class="text-gray-500 line-through ml-2">$99.95</span>
+                    </div>
+                    <a href="https://sip.mycartpanda.com/checkout/158055610:1?src=FlowGenie" class="block w-full bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-700 transition text-center">
+                        Order Now
+                    </a>
+                </div>
+        
+                <!-- Popular Package -->
+                <div class="bg-white rounded-xl shadow-lg p-6 border-2 border-blue-600 transform scale-105 relative">
+                    <div class="bg-blue-600 text-white px-4 py-1 rounded-full text-sm text-center mb-4">
+                        MOST POPULAR
+                    </div>
+                    <div class="absolute top-14 right-4 bg-red-500 text-white px-3 py-1 rounded-full text-sm">
+                        45% OFF
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">3 Month Supply</h3>
+                    <img src="https://erec-boost.com/BKR-ES-DESC/assets/3.png" alt="Popular Package" class="w-full rounded-lg mb-4">
+                    <div class="mb-4">
+                        <span class="text-3xl font-bold">$177</span>
+                        <span class="text-gray-500 line-through ml-2">$299.85</span>
+                    </div>
+                    <a href="https://sip.mycartpanda.com/checkout/158055048:1?src=FlowGenie" class="block w-full bg-green-600 text-white py-3 rounded-lg hover:bg-green-700 transition text-center">
+                        Order Now
+                    </a>
+                </div>
+        
+                <!-- Premium Package -->
+                <div class="bg-white rounded-xl shadow-lg p-6 border-2 border-gray-200 relative">
+                    <div class="absolute top-4 right-4 bg-red-500 text-white px-3 py-1 rounded-full text-sm">
+                        60% OFF
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">6 Month Supply</h3>
+                    <img src="https://erec-boost.com/BKR-ES-DESC/assets/6.png" alt="Premium Package" class="w-full rounded-lg mb-4">
+                    <div class="mb-4">
+                        <span class="text-3xl font-bold">$294</span>
+                        <span class="text-gray-500 line-through ml-2">$599.70</span>
+                    </div>
+                    <a href="https://sip.mycartpanda.com/checkout/158055553:1?src=FlowGenie" class="block w-full bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-700 transition text-center">
+                        Order Now
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="mb-12">
+            <h2 class="text-3xl font-bold mb-8 text-center">Real Customer Results</h2>
+            <div class="grid md:grid-cols-3 gap-6">
+                <!-- Testimonial 1 -->
+                <div class="bg-white rounded-xl shadow-lg p-6">
+                    <div class="flex items-center mb-4">
+                       
+                        <div>
+                            <h4 class="font-bold">Michael R., 45</h4>
+                            <div class="flex text-yellow-400">★★★★★</div>
+                        </div>
+                    </div>
+                    
+                    <p class="text-gray-700">"After just 2 weeks, I noticed a significant improvement. My energy levels are through the roof and my confidence is back!"</p>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="bg-white rounded-xl shadow-lg p-6">
+                    <div class="flex items-center mb-4">
+                        
+                        <div>
+                            <h4 class="font-bold">David S., 52</h4>
+                            <div class="flex text-yellow-400">★★★★★</div>
+                        </div>
+                    </div>
+                    
+                    <p class="text-gray-700">"This natural solution really works! I tried everything before finding this product. Now I feel like I'm in my 30s again!"</p>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="bg-white rounded-xl shadow-lg p-6">
+                    <div class="flex items-center mb-4">
+                        
+                        <div>
+                            <h4 class="font-bold">Robert K., 58</h4>
+                            <div class="flex text-yellow-400">★★★★★</div>
+                        </div>
+                    </div>
+                    
+                    <p class="text-gray-700">"The results are amazing. My performance has improved dramatically, and I have more energy than ever. Highly recommended!"</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Guarantee Section -->
+        <section class="bg-white rounded-xl shadow-lg p-8 text-center mb-12">
+            <img src="https://erec-boost.com/BKR-ES-DESC/assets/selo.webp" alt="Guarantee" class="mx-auto h-40 mb-4">
+            
+            <h2 class="text-2xl font-bold mb-4">60-Day Money Back Guarantee</h2>
+            <p class="text-gray-600 max-w-2xl mx-auto">
+                If you're not completely satisfied with your results, simply return the unused portion for a full refund.
+                No questions asked.
+            </p>
+        </section>
+
+        <!-- Final CTA -->
+        <section class="text-center">
+            <a href="#pricing-packages" class="inline-block bg-gradient-to-r from-green-600 to-green-700 text-white font-bold py-4 px-8 rounded-full hover:from-green-700 hover:to-green-800 transition transform hover:scale-105">
+                Claim Your Discount Now
+            </a>
+            <p class="mt-4 text-gray-600">Limited Time Offer - While Supplies Last</p>
+        </section>
+    </main>
+
+    <footer class="bg-gradient-to-b from-gray-100 to-gray-200 py-8 mt-12">
+        <div class="container mx-auto px-4 text-center text-gray-600">
+            <div class="grid grid-cols-4 gap-4 mb-8">
+                <div class="text-center">
+                    <div class="text-3xl mb-2">🏆</div>
+                    <p class="text-sm">FDA Registered</p>
+                </div>
+                <div class="text-center">
+                    <div class="text-3xl mb-2">🔬</div>
+                    <p class="text-sm">Clinically Tested</p>
+                </div>
+                <div class="text-center">
+                    <div class="text-3xl mb-2">🌿</div>
+                    <p class="text-sm">100% Natural</p>
+                </div>
+                <div class="text-center">
+                    <div class="text-3xl mb-2">🛡️</div>
+                    <p class="text-sm">Quality Guaranteed</p>
+                </div>
+            </div>
+            <p class="mb-2">&copy; 2024 Medical Health News. All rights reserved.</p>
+            <p class="text-sm">Results may vary. Consult your healthcare provider before starting any new treatment.</p>
+        </div>
+    </footer>
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
