@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Quiz Saúde Masculina</title>
+    <title>Men's Health Quiz</title>
     <style>
         /* Estilos melhorados para a seção de notícias */
 .news-container {
@@ -881,138 +881,138 @@ figcaption {
         </div>
     </div>
 
-    <script>
+     <script>
         const questions = [
             {
                 type: 'age',
-                question: "Qual é sua faixa etária?",
-                subtitle: "Para oferecermos a melhor solução personalizada para você",
+                question: "What is your age range?",
+                subtitle: "To offer you the best personalized solution",
                 options: [
-                    { text: "30-40 anos", image: "https://www.cnnbrasil.com.br/wp-content/uploads/sites/12/2023/06/india.webp?w=495" },
-                    { text: "41-50 anos", image: "https://img.freepik.com/fotos-premium/homem-de-terno-e-gravata-posando-para-uma-foto-ia-geradora_97167-19520.jpg" },
-                    { text: "51-60 anos", image: "https://img.freepik.com/fotos-premium/homem-velho-feliz-observando-residencia-ia-gerativa_94628-7061.jpg?w=360" },
-                    { text: "60+ anos", image: "https://d1muf25xaso8hp.cloudfront.net/https://img.criativodahora.com.br/2025/01/criativo-67808e3d1342aimg-2025-01-1067808e3d1342e.jpg?w=380&h=&auto=compress&dpr=1&fit=max" }
+                    { text: "30-40 years", image: "https://www.cnnbrasil.com.br/wp-content/uploads/sites/12/2023/06/india.webp?w=495" },
+                    { text: "41-50 years", image: "https://img.freepik.com/fotos-premium/homem-de-terno-e-gravata-posando-para-uma-foto-ia-geradora_97167-19520.jpg" },
+                    { text: "51-60 years", image: "https://img.freepik.com/fotos-premium/homem-velho-feliz-observando-residencia-ia-gerativa_94628-7061.jpg?w=360" },
+                    { text: "60+ years", image: "https://d1muf25xaso8hp.cloudfront.net/https://img.criativodahora.com.br/2025/01/criativo-67808e3d1342aimg-2025-01-1067808e3d1342e.jpg?w=380&h=&auto=compress&dpr=1&fit=max" }
                 ]
             },
             {
                 type: 'success',
-                question: "Você sabia?",
-                subtitle: "Mais de 14.000 homens da sua faixa etária já recuperaram a própria libido de maneira natural e rápida! E voltaram a ter sua vida sexual mais ativa do que na juventude",
-                content: "Entenda o por que nossa solução foi capaz de ajudar todos esses homens, sem causar nenhum efeito colateral e sendo mais eficaz do que qualquer método existente.",
+                question: "Did you know?",
+                subtitle: "More than 14,000 men in your age group have already recovered their libido naturally and quickly! And they've returned to having a more active sex life than in their youth",
+                content: "Understand why our solution was able to help all these men, without causing any side effects and being more effective than any existing method.",
                 image: "https://img.freepik.com/fotos-premium/um-homem-feliz-e-alegre-irradiando-energia-positiva-ia-generativa_888418-14329.jpg"
             },
             {
                 type: 'treatment',
-                question: "Qual tratamento você utiliza atualmente?",
-                subtitle: "Nos ajude a entender melhor sua situação",
+                question: "What treatment are you currently using?",
+                subtitle: "Help us better understand your situation",
                 options: [
-                    { text: "Medicamentos", icon: "💊" },
-                    { text: "Suplementos", icon: "🌿" },
-                    { text: "Não faço tratamento", icon: "❌" },
-                    { text: "Atividade Física", icon: "🏃‍♂️" }
+                    { text: "Medications", icon: "💊" },
+                    { text: "Supplements", icon: "🌿" },
+                    { text: "No treatment", icon: "❌" },
+                    { text: "Physical Activity", icon: "🏃‍♂️" }
                 ]
             },
             {
                 type: 'frequency',
-                question: "Com que frequência você tem relações com sua parceira?",
-                subtitle: "Sua resposta é confidencial e nos ajuda a personalizar sua solução",
+                question: "How often do you have relations with your partner?",
+                subtitle: "Your answer is confidential and helps us personalize your solution",
                 options: [
-                    { text: "Raramente ou nunca", icon: "😔" },
-                    { text: "1-2 vezes por mês", icon: "😐" },
-                    { text: "1-2 vezes por semana", icon: "🙂" },
-                    { text: "3+ vezes por semana", icon: "😄" }
+                    { text: "Rarely or never", icon: "😔" },
+                    { text: "1-2 times per month", icon: "😐" },
+                    { text: "1-2 times per week", icon: "🙂" },
+                    { text: "3+ times per week", icon: "😄" }
                 ]
             },
             {
                 type: 'success',
-                question: "Analisamos suas perguntas e chegou a hora de resolver esse problema de uma vez por todas!",
-                subtitle: "Clique no botão abaixo e descubra como milhares de homens assim como você recuperaram sua disposição e confiança na cama em menos de 2 semanas",
-                buttonText: "Quero descobrir a solução!",
-                content: "Volte a ter uma libido avassaladora e durar horas na cama com sua parceira!",
+                question: "We've analyzed your answers and it's time to solve this problem once and for all!",
+                subtitle: "Click the button below and discover how thousands of men just like you regained their stamina and confidence in bed in less than 2 weeks",
+                buttonText: "I want to discover the solution!",
+                content: "Get back to having an overwhelming libido and lasting hours in bed with your partner!",
                 image: "https://imagex1.sx.cdn.live/images/pinporn/2019/12/03/22268284.gif?width=300"
             },
             {
                 type: 'news',
                 isLastQuestion: true,
-                buttonText: "Quero recuperar minha disposição agora!",
+                buttonText: "I want to recover my stamina now!",
                 content: `<main class="news-container">
             <div class="news-header">
                 <div class="news-logo">
                     <img class="news-logo-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Men%27s_Health.svg/1024px-Men%27s_Health.svg.png" alt="Logo">
                 </div>
                 <div class="news-meta">
-                    <span class="news-source">Saúde & Bem-estar</span>
-                    <span class="news-date">Publicado em 28 de Janeiro de 2024 • Atualizado há 2 dias</span>
+                    <span class="news-source">Health & Wellness</span>
+                    <span class="news-date">Published on January 28, 2024 • Updated 2 days ago</span>
                 </div>
             </div>
             
-            <h1 class="news-headline">Descoberta Revolucionária: Cientistas Brasileiros Desenvolvem Solução Natural para Potência Masculina</h1>
+            <h1 class="news-headline">Revolutionary Discovery: Brazilian Scientists Develop Natural Solution for Male Potency</h1>
             
             <div class="news-authors">
                 <div class="author-info">
                 </div>
                 <div class="news-share">
-                    <span class="share-count">12.4k compartilhamentos</span>
+                    <span class="share-count">12.4k shares</span>
                 </div>
             </div>
 
             <figure class="news-hero">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Men%27s_Health.svg/1024px-Men%27s_Health.svg.png" alt="Laboratório de Pesquisa" class="hero-img">
-                <figcaption>Equipe de pesquisadores no laboratório onde a descoberta foi realizada</figcaption>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Men%27s_Health.svg/1024px-Men%27s_Health.svg.png" alt="Research Laboratory" class="hero-img">
+                <figcaption>Team of researchers in the laboratory where the discovery was made</figcaption>
             </figure>
 
             <div class="news-content">
                 <div class="key-points">
-                    <h3>Pontos Principais:</h3>
+                    <h3>Key Points:</h3>
                     <ul>
-                        <li>Fórmula natural desenvolvida após 5 anos de pesquisa</li>
-                        <li>92% de eficácia comprovada em estudos clínicos</li>
-                        <li>Zero efeitos colaterais relatados</li>
-                        <li>Já ajudou mais de 14.000 homens no Brasil</li>
+                        <li>Natural formula developed after 5 years of research</li>
+                        <li>92% efficacy proven in clinical studies</li>
+                        <li>Zero reported side effects</li>
+                        <li>Has already helped more than 14,000 men in Brazil</li>
                     </ul>
                 </div>
 
                 <p class="news-excerpt">
-                    Uma equipe de cientistas brasileiros acaba de anunciar uma descoberta que está revolucionando a saúde masculina: uma fórmula 100% natural que atua diretamente na causa raiz dos problemas de disposição masculina.
+                    A team of Brazilian scientists has just announced a discovery that is revolutionizing men's health: a 100% natural formula that acts directly on the root cause of male stamina problems.
                 </p>
 
                 <div class="research-highlight">
                     <div class="stat-circle">
                         <div class="stat-number">92%</div>
-                        <div class="stat-label">Taxa de Sucesso</div>
+                        <div class="stat-label">Success Rate</div>
                     </div>
                     <div class="stat-circle">
                         <div class="stat-number">30</div>
-                        <div class="stat-label">Dias para Resultado</div>
+                        <div class="stat-label">Days to Results</div>
                     </div>
                     <div class="stat-circle">
-                        <div class="stat-number">14mil+</div>
-                        <div class="stat-label">Homens Beneficiados</div>
+                        <div class="stat-number">14k+</div>
+                        <div class="stat-label">Men Benefited</div>
                     </div>
                 </div>
 
                 <blockquote class="expert-quote">
-                    <p>"Esta descoberta representa um avanço significativo na saúde masculina. Pela primeira vez, temos uma solução que trata a causa raiz do problema, não apenas os sintomas."</p>
-                    <cite>- Dr. Paulo Mendes, Especialista em Saúde Masculina</cite>
+                    <p>"This discovery represents a significant advancement in men's health. For the first time, we have a solution that treats the root cause of the problem, not just the symptoms."</p>
+                    <cite>- Dr. Paul Mendes, Men's Health Specialist</cite>
                 </blockquote>
 
                 <div class="study-results">
-                    <h3>Resultados Comprovados</h3>
+                    <h3>Proven Results</h3>
                     <div class="result-bars">
                         <div class="result-bar">
-                            <div class="bar-label">Aumento na Disposição</div>
+                            <div class="bar-label">Increase in Stamina</div>
                             <div class="bar-track">
                                 <div class="bar-fill" style="width: 94%">94%</div>
                             </div>
                         </div>
                         <div class="result-bar">
-                            <div class="bar-label">Melhora na Confiança</div>
+                            <div class="bar-label">Improvement in Confidence</div>
                             <div class="bar-track">
                                 <div class="bar-fill" style="width: 89%">89%</div>
                             </div>
                         </div>
                         <div class="result-bar">
-                            <div class="bar-label">Satisfação Geral</div>
+                            <div class="bar-label">Overall Satisfaction</div>
                             <div class="bar-track">
                                 <div class="bar-fill" style="width: 96%">96%</div>
                             </div>
@@ -1021,27 +1021,27 @@ figcaption {
                 </div>
 
                 <div class="testimonial-section">
-                    <h3>Depoimentos</h3>
+                    <h3>Testimonials</h3>
                     <div class="testimonial-grid">
                         <div class="testimonial-card">
                             <div class="testimonial-header">
-                                <img src="https://static.vecteezy.com/ti/fotos-gratis/p2/30865630-a-mais-velho-homem-em-pe-em-uma-sujeira-estrada-gerado-por-ia-foto.jpg" alt="João Silva" class="testimonial-img">
+                                <img src="https://static.vecteezy.com/ti/fotos-gratis/p2/30865630-a-mais-velho-homem-em-pe-em-uma-sujeira-estrada-gerado-por-ia-foto.jpg" alt="John Silva" class="testimonial-img">
                                 <div class="testimonial-info">
-                                    <strong>João Silva, 52 anos</strong>
+                                    <strong>John Silva, 52 years</strong>
                                     <div class="rating">★★★★★</div>
                                 </div>
                             </div>
-                            <p>"Recuperei minha confiança e em apenas 3 semanas minha mulher tava pedindo arrego, era pelo menos 3 vezes ao dia e ela tava maluca por mais. É incrível como o ErecBoost mudou minha vida!"</p>
+                            <p>"I regained my confidence and in just 3 weeks my wife was begging for mercy, it was at least 3 times a day and she was crazy for more. It's incredible how ErecBoost changed my life!"</p>
                         </div>
                         <div class="testimonial-card">
                             <div class="testimonial-header">
-                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLvQRXh1NTTOhzxoBzF780TBsjJmkru9kydw&s" alt="Carlos Mendes" class="testimonial-img">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLvQRXh1NTTOhzxoBzF780TBsjJmkru9kydw&s" alt="Charles Mendes" class="testimonial-img">
                                 <div class="testimonial-info">
-                                    <strong>Carlos Mendes, 48 anos</strong>
+                                    <strong>Charles Mendes, 48 years</strong>
                                     <div class="rating">★★★★★</div>
                                 </div>
                             </div>
-                            <p>"Meu relacionamento mudou completamente. Me sinto 20 anos mais jovem e cheio de libido! Só tenho a agradecer pelo ErecBoost"</p>
+                            <p>"My relationship changed completely. I feel 20 years younger and full of libido! I can only thank ErecBoost"</p>
                         </div>
                     </div>
                 </div>
