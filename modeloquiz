@@ -4,367 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Men's Health Quiz</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
     <style>
-        /* Estilos melhorados para a seção de notícias */
-.news-container {
-    padding: 20px;
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-.news-header {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 30px;
-    padding-bottom: 20px;
-    border-bottom: 1px solid #eee;
-    text-align: center;
-    flex-direction: column;
-    gap: 15px;
-}
-
-.news-logo {
-    margin-bottom: 10px;
-}
-
-.news-logo-img {
-    height: 30px;
-    object-fit: contain;
-}
-
-.news-meta {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 5px;
-}
-
-.news-source {
-    font-size: 1.2rem;
-    font-weight: 600;
-    color: #1a3c6d;
-}
-
-.news-date {
-    font-size: 0.9rem;
-    color: #666;
-}
-
-.news-headline {
-    font-size: 2rem;
-    line-height: 1.3;
-    color: #1a3c6d;
-    margin-bottom: 25px;
-    font-weight: 700;
-    text-align: center;
-    padding: 0 20px;
-}
-
-.news-share {
-    text-align: center;
-    margin: 20px auto;
-    background: #f8f9fa;
-    padding: 10px 20px;
-    border-radius: 20px;
-    display: inline-block;
-    font-size: 0.9rem;
-    color: #666;
-}
-
-.news-hero {
-    margin: 30px 0;
-    text-align: center;
-}
-
-.hero-img {
-    width: 100%;
-    max-width: 800px;
-    border-radius: 12px;
-    margin-bottom: 10px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-}
-
-figcaption {
-    font-size: 0.9rem;
-    color: #666;
-    text-align: center;
-    font-style: italic;
-}
-
-.key-points {
-    background: #f8f9fa;
-    padding: 25px;
-    border-radius: 12px;
-    margin: 30px auto;
-    max-width: 700px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-}
-
-.key-points h3 {
-    color: #1a3c6d;
-    margin-bottom: 20px;
-    text-align: center;
-    font-size: 1.3rem;
-}
-
-.key-points ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.key-points li {
-    margin-bottom: 12px;
-    padding-left: 30px;
-    position: relative;
-    font-size: 1rem;
-    line-height: 1.5;
-}
-
-.key-points li:before {
-    content: "✓";
-    position: absolute;
-    left: 0;
-    color: #2ecc71;
-    font-weight: bold;
-}
-
-.news-excerpt {
-    font-size: 1.2rem;
-    line-height: 1.6;
-    color: #333;
-    margin: 30px auto;
-    max-width: 700px;
-    text-align: center;
-    padding: 0 20px;
-}
-
-.research-highlight {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    margin: 40px auto;
-    max-width: 700px;
-    padding: 0 20px;
-}
-
-.stat-circle {
-    background: #f8f9fa;
-    border-radius: 12px;
-    padding: 20px;
-    text-align: center;
-    border: 2px solid #2b5876;
-    transition: transform 0.3s ease;
-}
-
-.stat-circle:hover {
-    transform: translateY(-5px);
-}
-
-.stat-number {
-    font-size: 1.8rem;
-    font-weight: 700;
-    color: #2b5876;
-    margin-bottom: 5px;
-}
-
-.stat-label {
-    font-size: 0.9rem;
-    color: #666;
-    line-height: 1.3;
-}
-
-.expert-quote {
-    border-left: 4px solid #2b5876;
-    padding: 25px;
-    background: #f8f9fa;
-    margin: 40px auto;
-    max-width: 700px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-}
-
-.expert-quote p {
-    font-size: 1.1rem;
-    color: #333;
-    font-style: italic;
-    margin-bottom: 15px;
-    line-height: 1.6;
-}
-
-.expert-quote cite {
-    color: #666;
-    font-style: normal;
-    font-size: 0.9rem;
-    display: block;
-    text-align: right;
-}
-
-.study-results {
-    margin: 40px auto;
-    max-width: 700px;
-    padding: 0 20px;
-}
-
-.study-results h3 {
-    color: #1a3c6d;
-    margin-bottom: 25px;
-    text-align: center;
-    font-size: 1.3rem;
-}
-
-.result-bars {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.result-bar {
-    background: #f8f9fa;
-    padding: 15px;
-    border-radius: 12px;
-}
-
-.bar-label {
-    font-size: 1rem;
-    font-weight: 500;
-    margin-bottom: 10px;
-    color: #333;
-}
-
-.bar-track {
-    height: 25px;
-    background: #e9ecef;
-    border-radius: 12px;
-    overflow: hidden;
-}
-
-.bar-fill {
-    height: 100%;
-    background: linear-gradient(90deg, #2b5876 0%, #4e4376 100%);
-    border-radius: 12px;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    padding-right: 10px;
-    font-size: 0.9rem;
-    font-weight: 600;
-    transition: width 1s ease;
-}
-
-.testimonial-section {
-    margin: 40px auto;
-    max-width: 700px;
-    padding: 0 20px;
-}
-
-.testimonial-section h3 {
-    color: #1a3c6d;
-    margin-bottom: 25px;
-    text-align: center;
-    font-size: 1.3rem;
-}
-
-.testimonial-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-}
-
-.testimonial-card {
-    background: #f8f9fa;
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-    transition: transform 0.3s ease;
-}
-
-.testimonial-card:hover {
-    transform: translateY(-5px);
-}
-
-.testimonial-header {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    margin-bottom: 15px;
-}
-
-.testimonial-img {
-    width: 60px;
-    height: 60px;
-    border-radius: 30px;
-    object-fit: cover;
-}
-
-.testimonial-info {
-    flex: 1;
-}
-
-.testimonial-info strong {
-    display: block;
-    margin-bottom: 5px;
-    color: #333;
-    font-size: 1rem;
-}
-
-.rating {
-    color: #ffd700;
-    font-size: 1rem;
-}
-
-/* Responsividade */
-@media (max-width: 768px) {
-    .news-headline {
-        font-size: 1.5rem;
-        padding: 0 15px;
-    }
-
-    .research-highlight {
-        grid-template-columns: 1fr;
-    }
-
-    .testimonial-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .key-points {
-        margin: 20px 15px;
-    }
-
-    .expert-quote {
-        margin: 20px 15px;
-        padding: 20px;
-    }
-
-    .stat-circle {
-        padding: 15px;
-    }
-
-    .stat-number {
-        font-size: 1.5rem;
-    }
-}
-
-@media (max-width: 480px) {
-    .news-headline {
-        font-size: 1.3rem;
-    }
-
-    .news-container {
-        padding: 15px;
-    }
-
-    .testimonial-card {
-        padding: 15px;
-    }
-
-    .testimonial-img {
-        width: 50px;
-        height: 50px;
-    }
-}
         * {
             margin: 0;
             padding: 0;
@@ -395,7 +36,7 @@ figcaption {
             padding: 16px;
             box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
             width: 100%;
-            max-width: 100%;
+            max-width: 800px;
             margin: 0 auto;
             overflow-x: hidden;
             position: relative;
@@ -509,11 +150,6 @@ figcaption {
             transition: all 0.3s ease;
         }
 
-        .next-btn:disabled {
-            background: #ccc;
-            cursor: not-allowed;
-        }
-
         .next-btn:active {
             transform: scale(0.98);
         }
@@ -529,6 +165,7 @@ figcaption {
             font-size: 2rem;
             color: #2b5876;
             margin-bottom: 12px;
+            text-align: center;
         }
 
         .success-text {
@@ -549,94 +186,88 @@ figcaption {
 
         /* News Section Styles */
         .news-container {
-            padding: 0 4px;
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
         }
 
         .news-header {
             display: flex;
             align-items: center;
-            margin-bottom: 20px;
-            padding-bottom: 12px;
+            justify-content: center;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
             border-bottom: 1px solid #eee;
+            text-align: center;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .news-logo {
+            margin-bottom: 10px;
         }
 
         .news-logo-img {
-            height: 16px;
-            margin-right: 12px;
+            height: 30px;
+            object-fit: contain;
         }
 
         .news-meta {
-            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 5px;
         }
 
         .news-source {
-            font-size: 1rem;
+            font-size: 1.2rem;
             font-weight: 600;
             color: #1a3c6d;
-            display: block;
         }
 
         .news-date {
-            font-size: 0.8rem;
+            font-size: 0.9rem;
             color: #666;
-            margin-top: 4px;
         }
 
         .news-headline {
-            font-size: 1.4rem;
+            font-size: 2rem;
             line-height: 1.3;
             color: #1a3c6d;
-            margin-bottom: 16px;
+            margin-bottom: 25px;
             font-weight: 700;
-        }
-
-        .news-share {
-            font-size: 0.9rem;
-            color: #666;
-            background: #f8f9fa;
-            padding: 8px 12px;
-            border-radius: 20px;
-            margin-bottom: 16px;
-        }
-
-        .news-hero {
-            margin-bottom: 24px;
-        }
-
-        .hero-img {
-            width: 100%;
-            border-radius: 12px;
-            margin-bottom: 8px;
-        }
-
-        figcaption {
-            font-size: 0.8rem;
-            color: #666;
             text-align: center;
+            padding: 0 20px;
         }
 
         .key-points {
             background: #f8f9fa;
-            padding: 20px;
+            padding: 25px;
             border-radius: 12px;
-            margin-bottom: 24px;
+            margin: 30px auto;
+            max-width: 700px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
         }
 
         .key-points h3 {
             color: #1a3c6d;
-            margin-bottom: 12px;
-            font-size: 1.1rem;
+            margin-bottom: 20px;
+            text-align: center;
+            font-size: 1.3rem;
         }
 
         .key-points ul {
             list-style: none;
+            padding: 0;
+            margin: 0;
         }
 
         .key-points li {
-            margin-bottom: 8px;
-            padding-left: 24px;
+            margin-bottom: 12px;
+            padding-left: 30px;
             position: relative;
-            font-size: 0.95rem;
+            font-size: 1rem;
+            line-height: 1.5;
         }
 
         .key-points li:before {
@@ -647,149 +278,40 @@ figcaption {
             font-weight: bold;
         }
 
-        .research-highlight {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-            gap: 12px;
-            margin: 24px 0;
-        }
-
-        .stat-circle {
-            background: #f8f9fa;
-            border-radius: 12px;
-            padding: 12px;
-            border: 2px solid #2b5876;
-            text-align: center;
-        }
-
-        .stat-number {
-            font-size: 1.4rem;
-            font-weight: 700;
-            color: #2b5876;
-        }
-
-        .stat-label {
-            font-size: 0.8rem;
-            color: #666;
-            margin-top: 4px;
-        }
-
         .expert-quote {
             border-left: 4px solid #2b5876;
-            padding: 16px;
+            padding: 25px;
             background: #f8f9fa;
-            margin: 20px 0;
-            font-size: 0.95rem;
+            margin: 40px auto;
+            max-width: 700px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
         }
 
         .expert-quote p {
-            margin-bottom: 8px;
+            font-size: 1.1rem;
+            color: #333;
             font-style: italic;
+            margin-bottom: 15px;
+            line-height: 1.6;
         }
 
         .expert-quote cite {
             color: #666;
             font-style: normal;
             font-size: 0.9rem;
+            display: block;
+            text-align: right;
         }
 
-        .study-results {
-            margin: 24px 0;
+        /* Landing Page Styles */
+        .landing-page {
+            background: #fff;
         }
 
-        .study-results h3 {
-            color: #1a3c6d;
-            margin-bottom: 16px;
-            font-size: 1.1rem;
-        }
-
-        .result-bars {
-            display: flex;
-            flex-direction: column;
-            gap: 12px;
-        }
-
-        .result-bar {
-            display: flex;
-            flex-direction: column;
-            gap: 8px;
-        }
-
-        .bar-label {
-            font-size: 0.9rem;
-            font-weight: 500;
-        }
-
-        .bar-track {
-            height: 20px;
-            background: #f8f9fa;
-            border-radius: 8px;
-            overflow: hidden;
-        }
-
-        .bar-fill {
-            height: 100%;
-            background: linear-gradient(90deg, #2b5876 0%, #4e4376 100%);
-            border-radius: 8px;
-            color: white;
-            display: flex;
-            align-items: center;
-            justify-content: flex-end;
-            padding-right: 8px;
-            font-size: 0.8rem;
-            font-weight: 600;
-            transition: width 0.8s ease;
-        }
-
-        .testimonial-section {
-            margin-top: 24px;
-        }
-
-        .testimonial-section h3 {
-            color: #1a3c6d;
-            margin-bottom: 16px;
-            font-size: 1.1rem;
-        }
-
-        .testimonial-grid {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 16px;
-        }
-
-        .testimonial-card {
-            background: #f8f9fa;
-            padding: 16px;
-            border-radius: 12px;
-        }
-
-        .testimonial-header {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            margin-bottom: 12px;
-        }
-
-        .testimonial-img {
-            width: 48px;
-            height: 48px;
-            border-radius: 24px;
-        }
-
-        .testimonial-info strong {
-            font-size: 0.9rem;
-        }
-
-        .rating {
-            color: #ffd700;
-            font-size: 0.8rem;
-            margin-top: 2px;
-        }
-
+        /* Responsive Styles */
         @media (min-width: 768px) {
             .quiz-container {
                 padding: 32px;
-                max-width: 800px;
             }
 
             .question {
@@ -818,18 +340,6 @@ figcaption {
 
             .option-text {
                 text-align: center;
-            }
-
-            .testimonial-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-
-            .news-headline {
-                font-size: 1.8rem;
-            }
-
-            .research-highlight {
-                grid-template-columns: repeat(3, 1fr);
             }
         }
 
@@ -881,7 +391,7 @@ figcaption {
         </div>
     </div>
 
-     <script>
+    <script>
         const questions = [
             {
                 type: 'age',
@@ -892,14 +402,16 @@ figcaption {
                     { text: "41-50 years", image: "https://img.freepik.com/fotos-premium/homem-de-terno-e-gravata-posando-para-uma-foto-ia-geradora_97167-19520.jpg" },
                     { text: "51-60 years", image: "https://img.freepik.com/fotos-premium/homem-velho-feliz-observando-residencia-ia-gerativa_94628-7061.jpg?w=360" },
                     { text: "60+ years", image: "https://d1muf25xaso8hp.cloudfront.net/https://img.criativodahora.com.br/2025/01/criativo-67808e3d1342aimg-2025-01-1067808e3d1342e.jpg?w=380&h=&auto=compress&dpr=1&fit=max" }
-                ]
+                ],
+                needsButton: false
             },
             {
                 type: 'success',
                 question: "Did you know?",
                 subtitle: "More than 14,000 men in your age group have already recovered their libido naturally and quickly! And they've returned to having a more active sex life than in their youth",
                 content: "Understand why our solution was able to help all these men, without causing any side effects and being more effective than any existing method.",
-                image: "https://img.freepik.com/fotos-premium/um-homem-feliz-e-alegre-irradiando-energia-positiva-ia-generativa_888418-14329.jpg"
+                image: "https://img.freepik.com/fotos-premium/um-homem-feliz-e-alegre-irradiando-energia-positiva-ia-generativa_888418-14329.jpg",
+                needsButton: true
             },
             {
                 type: 'treatment',
@@ -910,7 +422,8 @@ figcaption {
                     { text: "Supplements", icon: "🌿" },
                     { text: "No treatment", icon: "❌" },
                     { text: "Physical Activity", icon: "🏃‍♂️" }
-                ]
+                ],
+                needsButton: false
             },
             {
                 type: 'frequency',
@@ -921,7 +434,8 @@ figcaption {
                     { text: "1-2 times per month", icon: "😐" },
                     { text: "1-2 times per week", icon: "🙂" },
                     { text: "3+ times per week", icon: "😄" }
-                ]
+                ],
+                needsButton: false
             },
             {
                 type: 'success',
@@ -929,124 +443,245 @@ figcaption {
                 subtitle: "Click the button below and discover how thousands of men just like you regained their stamina and confidence in bed in less than 2 weeks",
                 buttonText: "I want to discover the solution!",
                 content: "Get back to having an overwhelming libido and lasting hours in bed with your partner!",
-                image: "https://imagex1.sx.cdn.live/images/pinporn/2019/12/03/22268284.gif?width=300"
+                image: "https://imagex1.sx.cdn.live/images/pinporn/2019/12/03/22268284.gif?width=300",
+                needsButton: true
             },
             {
                 type: 'news',
-                isLastQuestion: true,
-                buttonText: "I want to recover my stamina now!",
                 content: `<main class="news-container">
-            <div class="news-header">
-                <div class="news-logo">
-                    <img class="news-logo-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Men%27s_Health.svg/1024px-Men%27s_Health.svg.png" alt="Logo">
+                    <div class="news-header">
+                        <div class="news-logo">
+                            <img class="news-logo-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Men%27s_Health.svg/1024px-Men%27s_Health.svg.png" alt="Logo"></div>
+                        <div class="news-meta">
+                            <span class="news-source">Health & Wellness</span>
+                            <span class="news-date">Published on January 28, 2024 • Updated 2 days ago</span>
+                        </div>
+                    </div>
+                    
+                    <h1 class="news-headline">Revolutionary Discovery: Brazilian Scientists Develop Natural Solution for Male Potency</h1>
+                    
+                    <div class="news-share">
+                        <span class="share-count">12.4k shares</span>
+                    </div>
+
+                    <div class="key-points">
+                        <h3>Key Points:</h3>
+                        <ul>
+                            <li>Natural formula developed after 5 years of research</li>
+                            <li>92% efficacy proven in clinical studies</li>
+                            <li>Zero reported side effects</li>
+                            <li>Has already helped more than 14,000 men in US</li>
+                        </ul>
+                    </div>
+
+                    <blockquote class="expert-quote">
+                        <p>"This discovery represents a significant advancement in men's health. For the first time, we have a solution that treats the root cause of the problem, not just the symptoms."</p>
+                        <cite>- Dr. Paul Mendes, Men's Health Specialist</cite>
+                    </blockquote>
+                </main>`,
+                needsButton: true,
+                buttonText: "I want to recover my stamina now!"
+            },
+            {
+                type: 'landing',
+                content: `
+                <!-- Landing Page Container -->
+<div class="landing-page bg-gray-50">
+    <!-- Sticky Offer Banner -->
+    <div class="fixed top-0 left-0 right-0 z-50 bg-red-600 text-white py-3 text-center shadow-lg">
+        <p class="text-sm md:text-base animate-pulse font-medium px-4">
+            🔥 Special Offer: Save 30% + Free Shipping Today Only!
+        </p>
+    </div>
+
+    <!-- Header Section with padding-top to account for fixed banner -->
+    <header class="bg-gradient-to-r from-blue-900 to-blue-800 text-white pt-20 pb-12 px-4 md:pt-24 md:pb-16">
+        <div class="container mx-auto max-w-4xl text-center">
+            <h1 class="text-2xl md:text-4xl lg:text-5xl font-bold mb-4 leading-tight">
+                Breakthrough Natural Solution for Men's Health
+            </h1>
+            <p class="text-lg md:text-xl opacity-90">
+                Clinically Proven | Doctor Recommended | 100% Natural
+            </p>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-8 md:py-12 max-w-6xl">
+        <!-- Hero Section -->
+        <section class="bg-white rounded-2xl shadow-xl overflow-hidden mb-12">
+            <div class="grid md:grid-cols-2 gap-6 md:gap-8 p-6 md:p-8">
+                <!-- Product Image -->
+                <div class="flex items-center justify-center">
+                    <img 
+                        src="https://erec-boost.com/BKR-ES-DESC/assets/6.png" 
+                        alt="Product Image" 
+                        class="rounded-lg shadow-lg w-full max-w-md transform transition-transform hover:scale-105"
+                        loading="lazy"
+                    >
                 </div>
-                <div class="news-meta">
-                    <span class="news-source">Health & Wellness</span>
-                    <span class="news-date">Published on January 28, 2024 • Updated 2 days ago</span>
+
+                <!-- Benefits & CTA -->
+                <div class="space-y-6">
+                    <!-- Benefits Card -->
+                    <div class="bg-green-50 p-6 rounded-xl shadow-sm">
+                        <h3 class="text-xl md:text-2xl font-bold text-gray-800 mb-4">
+                            Clinically Proven Benefits
+                        </h3>
+                        <ul class="space-y-4">
+                            <li class="flex items-center text-green-800">
+                                <svg class="w-5 h-5 md:w-6 md:h-6 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                </svg>
+                                <span class="text-sm md:text-base">Enhanced Performance (92% Success Rate)</span>
+                            </li>
+                            <li class="flex items-center text-green-800">
+                                <svg class="w-5 h-5 md:w-6 md:h-6 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                </svg>
+                                <span class="text-sm md:text-base">Improved Confidence (88% Reported)</span>
+                            </li>
+                            <li class="flex items-center text-green-800">
+                                <svg class="w-5 h-5 md:w-6 md:h-6 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                </svg>
+                                <span class="text-sm md:text-base">100% Natural Formula</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Special Offer Card -->
+                    <div class="bg-blue-50 p-6 rounded-xl shadow-sm">
+                        <div class="text-center">
+                            <p class="text-2xl md:text-3xl font-bold text-blue-900 mb-2">
+                                Special Offer
+                            </p>
+                            <p class="text-lg md:text-xl text-gray-600 mb-4">
+                                Save 30% + Free Shipping
+                            </p>
+                            <a 
+                                href="#pricing-packages" 
+                                class="inline-block bg-gradient-to-r from-green-600 to-green-700 text-white font-bold py-4 px-6 md:px-8 rounded-full hover:from-green-700 hover:to-green-800 transition transform hover:scale-105 shadow-lg text-sm md:text-base"
+                            >
+                                Claim Your Discount Now
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
-            
-            <h1 class="news-headline">Revolutionary Discovery: Brazilian Scientists Develop Natural Solution for Male Potency</h1>
-            
-            <div class="news-authors">
-                <div class="author-info">
+        </section>
+
+        <!-- Pricing Section -->
+        <section id="pricing-packages" class="mb-12 scroll-mt-20">
+            <h2 class="text-2xl md:text-3xl font-bold mb-8 text-center text-gray-800">
+                Choose Your Package
+            </h2>
+            <div class="grid md:grid-cols-3 gap-4 md:gap-6">
+                <!-- Basic Package -->
+                <div class="bg-white rounded-xl shadow-lg p-6 border-2 border-gray-200 relative transform transition-all hover:scale-102">
+                    <div class="absolute -top-3 right-4 bg-red-500 text-white px-3 py-1 rounded-full text-sm font-medium shadow-md">
+                        20% OFF
+                    </div>
+                    <h3 class="text-lg md:text-xl font-bold mb-4">1 Month Supply</h3>
+                    <img 
+                        src="https://erec-boost.com/BKR-ES-DESC/assets/1.png" 
+                        alt="Basic Package" 
+                        class="w-full rounded-lg mb-4 transform transition-transform hover:scale-105"
+                        loading="lazy"
+                    >
+                    <div class="mb-4 text-center">
+                        <span class="text-2xl md:text-3xl font-bold">$84</span>
+                        <span class="text-gray-500 line-through ml-2">$99.95</span>
+                    </div>
+                    <a 
+                        href="https://sip.mycartpanda.com/checkout/158055610:1" 
+                        class="block w-full bg-blue-600 text-white text-center py-3 rounded-lg hover:bg-blue-700 transition shadow-md text-sm md:text-base font-semibold"
+                    >
+                        Order Now
+                    </a>
                 </div>
-                <div class="news-share">
-                    <span class="share-count">12.4k shares</span>
+
+                <!-- Popular Package -->
+                <div class="bg-white rounded-xl shadow-xl p-6 border-2 border-blue-600 transform scale-105 relative">
+                    <div class="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-blue-600 text-white px-6 py-1 rounded-full text-sm font-medium shadow-md whitespace-nowrap">
+                        MOST POPULAR
+                    </div>
+                    <div class="absolute top-8 right-4 bg-red-500 text-white px-3 py-1 rounded-full text-sm font-medium shadow-md">
+                        45% OFF
+                    </div>
+                    <h3 class="text-lg md:text-xl font-bold mb-4 mt-4">3 Month Supply</h3>
+                    <img 
+                        src="https://erec-boost.com/BKR-ES-DESC/assets/3.png" 
+                        alt="Popular Package" 
+                        class="w-full rounded-lg mb-4 transform transition-transform hover:scale-105"
+                        loading="lazy"
+                    >
+                    <div class="mb-4 text-center">
+                        <span class="text-2xl md:text-3xl font-bold">$177</span>
+                        <span class="text-gray-500 line-through ml-2">$299.85</span>
+                    </div>
+                    <a 
+                        href="https://sip.mycartpanda.com/checkout/158055048:1" 
+                        class="block w-full bg-green-600 text-white text-center py-3 rounded-lg hover:bg-green-700 transition shadow-md text-sm md:text-base font-semibold"
+                    >
+                        Order Now
+                    </a>
+                </div>
+
+                <!-- Premium Package -->
+                <div class="bg-white rounded-xl shadow-lg p-6 border-2 border-gray-200 relative transform transition-all hover:scale-102">
+                    <div class="absolute -top-3 right-4 bg-red-500 text-white px-3 py-1 rounded-full text-sm font-medium shadow-md">
+                        60% OFF
+                    </div>
+                    <h3 class="text-lg md:text-xl font-bold mb-4">6 Month Supply</h3>
+                    <img 
+                        src="https://erec-boost.com/BKR-ES-DESC/assets/6.png" 
+                        alt="Premium Package" 
+                        class="w-full rounded-lg mb-4 transform transition-transform hover:scale-105"
+                        loading="lazy"
+                    >
+                    <div class="mb-4 text-center">
+                        <span class="text-2xl md:text-3xl font-bold">$294</span>
+                        <span class="text-gray-500 line-through ml-2">$599.70</span>
+                    </div>
+                    <a 
+                        href="https://sip.mycartpanda.com/checkout/158055553:1" 
+                        class="block w-full bg-blue-600 text-white text-center py-3 rounded-lg hover:bg-blue-700 transition shadow-md text-sm md:text-base font-semibold"
+                    >
+                        Order Now
+                    </a>
                 </div>
             </div>
+        </section>
 
-            <figure class="news-hero">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Men%27s_Health.svg/1024px-Men%27s_Health.svg.png" alt="Research Laboratory" class="hero-img">
-                <figcaption>Team of researchers in the laboratory where the discovery was made</figcaption>
-            </figure>
+        <!-- Guarantee Section -->
+        <section class="bg-white rounded-xl shadow-lg p-6 md:p-8 text-center mb-12">
+            <img 
+                src="https://erec-boost.com/BKR-ES-DESC/assets/selo.webp" 
+                alt="Guarantee" 
+                class="mx-auto h-28 md:h-40 mb-4"
+                loading="lazy"
+            >
+            <h2 class="text-xl md:text-2xl font-bold mb-4 text-gray-800">
+                60-Day Money Back Guarantee
+            </h2>
+            <p class="text-gray-600 max-w-2xl mx-auto text-sm md:text-base leading-relaxed">
+                If you're not completely satisfied with your results, simply return the unused portion for a full refund.
+                No questions asked.
+            </p>
+        </section>
+    </main>
+</div>
 
-            <div class="news-content">
-                <div class="key-points">
-                    <h3>Key Points:</h3>
-                    <ul>
-                        <li>Natural formula developed after 5 years of research</li>
-                        <li>92% efficacy proven in clinical studies</li>
-                        <li>Zero reported side effects</li>
-                        <li>Has already helped more than 14,000 men in Brazil</li>
-                    </ul>
-                </div>
-
-                <p class="news-excerpt">
-                    A team of Brazilian scientists has just announced a discovery that is revolutionizing men's health: a 100% natural formula that acts directly on the root cause of male stamina problems.
-                </p>
-
-                <div class="research-highlight">
-                    <div class="stat-circle">
-                        <div class="stat-number">92%</div>
-                        <div class="stat-label">Success Rate</div>
-                    </div>
-                    <div class="stat-circle">
-                        <div class="stat-number">30</div>
-                        <div class="stat-label">Days to Results</div>
-                    </div>
-                    <div class="stat-circle">
-                        <div class="stat-number">14k+</div>
-                        <div class="stat-label">Men Benefited</div>
-                    </div>
-                </div>
-
-                <blockquote class="expert-quote">
-                    <p>"This discovery represents a significant advancement in men's health. For the first time, we have a solution that treats the root cause of the problem, not just the symptoms."</p>
-                    <cite>- Dr. Paul Mendes, Men's Health Specialist</cite>
-                </blockquote>
-
-                <div class="study-results">
-                    <h3>Proven Results</h3>
-                    <div class="result-bars">
-                        <div class="result-bar">
-                            <div class="bar-label">Increase in Stamina</div>
-                            <div class="bar-track">
-                                <div class="bar-fill" style="width: 94%">94%</div>
-                            </div>
-                        </div>
-                        <div class="result-bar">
-                            <div class="bar-label">Improvement in Confidence</div>
-                            <div class="bar-track">
-                                <div class="bar-fill" style="width: 89%">89%</div>
-                            </div>
-                        </div>
-                        <div class="result-bar">
-                            <div class="bar-label">Overall Satisfaction</div>
-                            <div class="bar-track">
-                                <div class="bar-fill" style="width: 96%">96%</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="testimonial-section">
-                    <h3>Testimonials</h3>
-                    <div class="testimonial-grid">
-                        <div class="testimonial-card">
-                            <div class="testimonial-header">
-                                <img src="https://static.vecteezy.com/ti/fotos-gratis/p2/30865630-a-mais-velho-homem-em-pe-em-uma-sujeira-estrada-gerado-por-ia-foto.jpg" alt="John Silva" class="testimonial-img">
-                                <div class="testimonial-info">
-                                    <strong>John Silva, 52 years</strong>
-                                    <div class="rating">★★★★★</div>
-                                </div>
-                            </div>
-                            <p>"I regained my confidence and in just 3 weeks my wife was begging for mercy, it was at least 3 times a day and she was crazy for more. It's incredible how ErecBoost changed my life!"</p>
-                        </div>
-                        <div class="testimonial-card">
-                            <div class="testimonial-header">
-                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLvQRXh1NTTOhzxoBzF780TBsjJmkru9kydw&s" alt="Charles Mendes" class="testimonial-img">
-                                <div class="testimonial-info">
-                                    <strong>Charles Mendes, 48 years</strong>
-                                    <div class="rating">★★★★★</div>
-                                </div>
-                            </div>
-                            <p>"My relationship changed completely. I feel 20 years younger and full of libido! I can only thank ErecBoost"</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </main>`
+<!-- Fixed Bottom CTA for Mobile -->
+<div class="md:hidden fixed bottom-0 left-0 right-0 bg-white shadow-lg border-t border-gray-200 p-4">
+    <a 
+        href="#pricing-packages" 
+        class="block w-full bg-gradient-to-r from-green-600 to-green-700 text-white text-center py-3 rounded-lg font-bold text-lg shadow-lg"
+    >
+        Order Now
+    </a>
+</div>`,
+                needsButton: false
             }
         ];
 
@@ -1060,16 +695,28 @@ figcaption {
         }
 
         function createQuestionElement(question) {
-            return `
-                ${question.type !== 'news' ? `
-                    <h2 class="question">${question.question}</h2>
-                    ${question.subtitle ? `<p class="subtitle">${question.subtitle}</p>` : ''}
-                ` : ''}
-                ${getQuestionContent(question)}
-                <button class="next-btn" id="nextBtn" ${question.type === 'age' || question.type === 'treatment' || question.type === 'frequency' ? 'disabled' : ''}>
-                    ${question.buttonText || 'Continuar'}
-                </button>
-            `;
+            let content = '';
+            
+            if (question.type !== 'landing') {
+                if (question.question) {
+                    content += `<h2 class="question">${question.question}</h2>`;
+                }
+                if (question.subtitle) {
+                    content += `<p class="subtitle">${question.subtitle}</p>`;
+                }
+            }
+
+            content += getQuestionContent(question);
+
+            if (question.needsButton) {
+                content += `
+                    <button class="next-btn" id="nextBtn">
+                        ${question.buttonText || 'Continue'}
+                    </button>
+                `;
+            }
+
+            return content;
         }
 
         function getQuestionContent(question) {
@@ -1099,6 +746,7 @@ figcaption {
                         </div>
                     `;
                 case 'news':
+                case 'landing':
                     return question.content;
                 default:
                     return '';
@@ -1109,34 +757,45 @@ figcaption {
             updateProgress();
             questionContainer.innerHTML = createQuestionElement(questions[currentQuestion]);
             
-            if (questions[currentQuestion].type === 'age' || 
-                questions[currentQuestion].type === 'treatment' || 
-                questions[currentQuestion].type === 'frequency') {
-                
+            if (questions[currentQuestion].options) {
                 const optionCards = document.querySelectorAll('.option-card');
                 optionCards.forEach(card => {
-                    card.addEventListener('click', () => selectOption(card));
-                    card.addEventListener('keypress', (e) => {
-                        if (e.key === 'Enter' || e.key === ' ') {
-                            selectOption(card);
-                            e.preventDefault();
-                        }
+                    card.addEventListener('click', () => {
+                        selectOption(card);
+                        // Automatically advance after selection
+                        setTimeout(nextQuestion, 300);
                     });
                 });
             }
 
             const nextBtn = document.getElementById('nextBtn');
-            nextBtn.addEventListener('click', nextQuestion);
+            if (nextBtn) {
+                nextBtn.addEventListener('click', nextQuestion);
+            }
+
+            // Add smooth scrolling for landing page links
+            if (questions[currentQuestion].type === 'landing') {
+                document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                    anchor.addEventListener('click', function (e) {
+                        e.preventDefault();
+                        const targetId = this.getAttribute('href');
+                        const targetElement = document.querySelector(targetId);
+                        if (targetElement) {
+                            targetElement.scrollIntoView({
+                                behavior: 'smooth',
+                                block: 'start'
+                            });
+                        }
+                    });
+                });
+            }
         }
 
         function selectOption(selectedCard) {
             document.querySelectorAll('.option-card').forEach(card => {
                 card.classList.remove('selected');
-                card.setAttribute('aria-selected', 'false');
             });
             selectedCard.classList.add('selected');
-            selectedCard.setAttribute('aria-selected', 'true');
-            document.getElementById('nextBtn').disabled = false;
         }
 
         function nextQuestion() {
@@ -1148,8 +807,7 @@ figcaption {
         }
 
         // Prevent zoom on double tap in iOS
-        document.addEventListener('gesturestart', function(e) {
-            e.preventDefault();
+        document.addEventListener('gesturestart', function(e) {e.preventDefault();
         });
 
         // Prevent scrolling when touching the quiz container on mobile
@@ -1181,15 +839,126 @@ figcaption {
             container.style.minHeight = window.innerHeight > 700 ? '700px' : '100vh';
         }
 
-        window.addEventListener('resize', handleResize);
-        window.addEventListener('orientationchange', handleResize);
-
-        // Initialize quiz
+        // Initialize
         document.addEventListener('DOMContentLoaded', function() {
             handleResize();
             loadQuestion();
             addAnimationToElements();
         });
+
+        // Event listeners for window resize
+        window.addEventListener('resize', handleResize);
+        window.addEventListener('orientationchange', handleResize);
+
+        const TrackingUtils = {
+    // Get URL parameters
+    getURLParams() {
+        const searchParams = new URLSearchParams(window.location.search);
+        return {
+            src: searchParams.get('src') || 'direct',
+            utm_source: searchParams.get('utm_source'),
+            utm_medium: searchParams.get('utm_medium'),
+            utm_campaign: searchParams.get('utm_campaign')
+        };
+    },
+
+    // Save tracking data to localStorage
+    saveTrackingData() {
+        const params = this.getURLParams();
+        if (params.src || params.utm_source) {
+            localStorage.setItem('tracking_data', JSON.stringify({
+                ...params,
+                first_visit: new Date().toISOString()
+            }));
+        }
+    },
+
+    // Get tracking data
+    getTrackingData() {
+        const data = localStorage.getItem('tracking_data');
+        return data ? JSON.parse(data) : null;
+    },
+
+    // Track event
+    trackEvent(eventName, additionalData = {}) {
+        const trackingData = this.getTrackingData() || this.getURLParams();
+        const eventData = {
+            event_name: eventName,
+            timestamp: new Date().toISOString(),
+            source: trackingData.src || 'direct',
+            utm_source: trackingData.utm_source,
+            utm_medium: trackingData.utm_medium,
+            utm_campaign: trackingData.utm_campaign,
+            ...additionalData
+        };
+
+        // Log event (replace with your actual tracking implementation)
+        console.log('Event tracked:', eventData);
+
+        // Example: Send to Google Analytics
+        if (typeof gtag === 'function') {
+            gtag('event', eventName, eventData);
+        }
+
+        // Example: Send to Facebook Pixel
+        if (typeof fbq === 'function') {
+            fbq('track', eventName, eventData);
+        }
+
+        // You can add more tracking platforms here
+    }
+};
+
+// Initialize tracking
+document.addEventListener('DOMContentLoaded', () => {
+    TrackingUtils.saveTrackingData();
+});
+
+// Add tracking to quiz interactions
+function addTrackingToQuiz() {
+    // Track question views
+    const originalLoadQuestion = loadQuestion;
+    loadQuestion = function() {
+        originalLoadQuestion();
+        const currentQ = questions[currentQuestion];
+        TrackingUtils.trackEvent('question_view', {
+            question_number: currentQuestion + 1,
+            question_type: currentQ.type,
+            question_text: currentQ.question
+        });
+    };
+
+    // Track option selections
+    const originalSelectOption = selectOption;
+    selectOption = function(selectedCard) {
+        originalSelectOption(selectedCard);
+        TrackingUtils.trackEvent('option_selected', {
+            question_number: currentQuestion + 1,
+            selected_option: selectedCard.querySelector('.option-text').textContent
+        });
+    };
+
+    // Track button clicks
+    document.addEventListener('click', (e) => {
+        if (e.target.matches('.next-btn')) {
+            TrackingUtils.trackEvent('next_button_click', {
+                question_number: currentQuestion + 1
+            });
+        }
+
+        // Track order button clicks
+        if (e.target.matches('a[href*="checkout"]')) {
+            const packageType = e.target.closest('[class*="Package"]')?.querySelector('h3')?.textContent || 'unknown';
+            TrackingUtils.trackEvent('order_button_click', {
+                package_type: packageType
+            });
+        }
+    });
+}
+
+// Initialize tracking on quiz
+addTrackingToQuiz();
     </script>
+    
 </body>
 </html>
